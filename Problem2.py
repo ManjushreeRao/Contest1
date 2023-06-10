@@ -99,8 +99,9 @@ def hackerlandRadioTransmitters(x, k):
                 idx += 1
                 
         idx -= 1
+        next_location = x[idx] + k
         
-        while idx < n and x[idx] <= location + k:
+        while idx < n and x[idx] <= next_location:
             idx += 1
             
     return trnasmitter_installed
